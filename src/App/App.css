@@ -1,0 +1,16 @@
+/* RoutePulse – Global CSS Utilities */
+
+/* Slow spin animation for decorative rings */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+/* Smooth page transitions */
+* {
+  scroll-behavior: smooth;
+}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { Bus, Ticket, MapPin, Clock, X, ChevronRight } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import api from "../service/api"
-import { cancelBooking, type Booking } from "../service/bookings"
+import { type Booking } from "../service/bookings"
 import Navbar from "../components/Navbar"
 
 interface User {
@@ -30,7 +30,7 @@ interface DashboardData {
 const UserDashboard = () => {
   const [data, setData] = useState<DashboardData | null>(null)
   const [loading, setLoading] = useState(true)
-  const [cancellingId, setCancellingId] = useState<string | null>(null)
+  const [cancellingId] = useState<string | null>(null)
   const navigate = useNavigate()
 
   const fetchDashboard = async () => {

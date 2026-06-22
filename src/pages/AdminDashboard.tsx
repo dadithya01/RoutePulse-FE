@@ -8,7 +8,6 @@ import {
   LayoutDashboard,
   TrendingUp,
   MapPin,
-  Users,
   ChevronRight,
 } from "lucide-react"
 import Navbar from "../components/Navbar"

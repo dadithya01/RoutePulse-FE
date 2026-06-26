@@ -1,7 +1,7 @@
 import axios, { AxiosError } from "axios"
 import { refreshTokenCall } from "./auth"
 
-const api = axios.create({ baseURL: "hhttps://route-pulse-be.vercel.app/api/v1" })
+const api = axios.create({ baseURL: "https://route-pulse-be.vercel.app/api/v1" })
 
 const PUBLIC_ENDPOINTS = ["/auth/login", "/auth/register", "/auth/refresh"]
 
